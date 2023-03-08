@@ -31,7 +31,7 @@ function playGame() {
     let computerScore = 0;
     // Loop 5 times player
     for (let i = 0; i < 5; i++) {   
-        const playerSelection = prompt('rock , papper or scissors?');
+        const playerSelection = prompt('Please type : rock , papper or scissors?');
         if (playerSelection === 'rock' || playerSelection === 'scissors' || playerSelection === 'papper'){ 
             alert("You threw  :  " + playerSelection);
             const computerSelection = computerPlay();
