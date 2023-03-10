@@ -32,7 +32,7 @@ function playGame() {
     // Loop 5 times player
     for (let i = 0; i < 5; i++) {   
         const playerSelection = prompt('Please type : rock , paper or scissors?');
-        if (playerSelection === 'rock' || playerSelection === 'scissors' || playerSelection === 'papper'){ 
+        if (playerSelection === 'rock' || playerSelection === 'scissors' || playerSelection === 'paper'){ 
             alert("You threw  :  " + playerSelection);
             const computerSelection = computerPlay();
             alert("computer threw  :  " + computerSelection);
