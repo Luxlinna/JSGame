@@ -5,7 +5,7 @@ function computerPlay() {
         case 0:
             return 'rock';
         case 1:
-            return 'papper';
+            return 'paper';
         case 2:
             return 'scissors';
     }
@@ -31,7 +31,7 @@ function playGame() {
     let computerScore = 0;
     // Loop 5 times player
     for (let i = 0; i < 5; i++) {   
-        const playerSelection = prompt('Please type : rock , papper or scissors?');
+        const playerSelection = prompt('Please type : rock , paper or scissors?');
         if (playerSelection === 'rock' || playerSelection === 'scissors' || playerSelection === 'papper'){ 
             alert("You threw  :  " + playerSelection);
             const computerSelection = computerPlay();
@@ -44,7 +44,7 @@ function playGame() {
                 computerScore++;
             }
         }else {
-            alert('"Error", Please type: rock, scissors or papper.  ' + ' You missed this round ! '); 
+            alert('"Error", Please type: rock, scissors or paper.  ' + ' You missed this round ! '); 
         }
     }
         // Display final score and whose won !
